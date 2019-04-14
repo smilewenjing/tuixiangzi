@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>推箱子</title>
+<style type="text/css">
+.mainDiv{ margin:20px auto; border:3px solid #06C; background:url(PNG/GroundGravel_Concrete.png)}
+.smailDiv{width:64px; height:64px; float:left; }
+.wall{background:url(PNG/Wall_Black.png) no-repeat}
+.endPoint{background:url(PNG/EndPoint_Black.png) no-repeat 16px 16px;}
+.empty{background:url(PNG/Ground_Grass.png) no-repeat}
+.box{background:url(PNG/Crate_Brown.png) no-repeat;}
+.user{float:left;width:62px; height:62px; background-color:#CC0; border:1px solid #000; border-radius:32px;}
+</style>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/objectMove.js"></script>
+<script type="text/javascript" src="js/loadMap.js"></script>
+</head>
+<script type="text/javascript">
+//地图：1表示空白地区，2表示墙，3表示地板，4表示终点，5表示箱子，6表示小人儿
+//顺序：从左右到右，从上到下
+var map = "11222111,11242111,11232222,22253542,24356222,22225211,11124211,11122211";
+$(document).ready(function(e) {
+	loadMap(map); //地图加载器
+});
+
+</script>
+<body style="margin:0px; background-color:#CCC">
+
+<div class="mainDiv">
+</div>
+	<button type="button" id="guanka1" >第一关</button>
+	<button type="button" id="guanka2" >第二关</button>
+	<button type="button" id="guanka3" >第三关</button>
+	<button type="button" id="guanka4" >第四关</button>
+	<button type="button" id="guanka5" >第五关</button>
+</body>
+</html>
